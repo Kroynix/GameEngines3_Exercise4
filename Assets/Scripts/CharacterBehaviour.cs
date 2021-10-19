@@ -54,8 +54,6 @@ public class CharacterBehaviour : MonoBehaviour
             Flip();
         }
 
-
-
         //Check for Ground
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.1f,groundMask);
 
@@ -138,8 +136,8 @@ public class CharacterBehaviour : MonoBehaviour
             rb.AddForce(new Vector2(0.0f, jumpForce));
         }
         isJumping = false;
-    }
 
+    }
 
 
 }
